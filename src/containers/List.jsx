@@ -63,14 +63,14 @@ function List() {
 
     return (
         <Layout>
-            <Container>
+            <Container className="list">
                 <InputSearch
                     placeholder="Search products..."
                     value={searchTerm}
                     name="search"
                     onChange={getSearchTerm}
                 />
-                <Table striped bordered hover size="sm">
+                <Table hover>
                     <thead>
                         <tr>
                             <th>Product Id</th>
@@ -90,8 +90,8 @@ function List() {
                                 <td>{product.date}</td>
                                 <td>{product.status}</td>
                                 <td>
-                                    <Link to={"/edit/" + product._id} className="btn btn-primary">Edit</Link>
-                                    <Button onClick={() => deleteProduct(product._id)}>Delete</Button>
+                                    <Link to={"/edit/" + product._id} className="btn"><i className="bi bi-pencil"></i></Link>
+                                    <button className="btn" onClick={() => deleteProduct(product._id)}><i className="bi bi-trash"></i></button>
                                 </td>
                             </tr>
                         })}
