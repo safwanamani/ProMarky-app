@@ -45,7 +45,7 @@ function Edit(props) {
 
     return (
         <Layout>
-            <Container>
+            <Container className="form">
                 <Row>
                     <Col md={6}>
                         <h2>Edit Product</h2>
@@ -95,9 +95,9 @@ function Edit(props) {
                                 option2="Inactive"
                                 onChange={handleChange}
                             />
-                            <Button variant="primary" type="submit" onClick={editProduct}>
+                            <button className="btn" type="submit" onClick={editProduct}>
                                 Submit
-                            </Button>
+                            </button>
                         </Form>
                     </Col>
                 </Row>

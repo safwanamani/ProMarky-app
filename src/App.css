@@ -10,3 +10,14 @@
     color: #136a8a;
     background: none;
 }
+.form h2 {
+    margin-top: 2rem;
+}
+.form .btn {
+    background: linear-gradient(to right, #136a8a, #267871) !important;
+    border-color: none !important;
+    color: #fff;
+}
+.form .btn:hover {
+    background: linear-gradient(to right, #267871, #136a8a) !important;
+}

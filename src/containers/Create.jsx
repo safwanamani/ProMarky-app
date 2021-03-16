@@ -40,7 +40,7 @@ function Create(props) {
 
     return (
         <Layout>
-            <Container>
+            <Container className="form">
                 <Row>
                     <Col md={6}>
                         <h2>Create Product</h2>
@@ -90,9 +90,9 @@ function Create(props) {
                                 option2="Inactive"
                                 onChange={handleChange}
                             />
-                            <Button variant="primary" type="submit" onClick={createProduct}>
+                            <button className="btn" type="submit" onClick={createProduct}>
                                 Submit
-                            </Button>
+                            </button>
                         </Form>
                     </Col>
                 </Row>
